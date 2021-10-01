@@ -69,7 +69,7 @@
 
 <script>
 import { validMobile } from '@/utils/validate'
-import { mapActions } from '../../store/modules/user'
+import { mapActions } from 'vuex'
 export default {
   name: 'Login',
   data() {
@@ -140,7 +140,7 @@ export default {
           } catch (error) {
             console.log(error)
           } finally {
-            this.loading = false
+            this.loading = true
           }
         }
       })
